@@ -1,4 +1,3 @@
-import MilkIcon from "@/images/milk-logo-white.svg";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,12 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={inter.className}>
-        <header className="pt-5 flex justify-center opacity-70 fixed z-10 w-screen">
-          <MilkIcon />
-        </header>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
